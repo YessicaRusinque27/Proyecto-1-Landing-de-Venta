@@ -1,0 +1,266 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: burlywood;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo img {
+    max-width: 100px; 
+    margin-left: 20px; 
+}
+
+header nav a{
+    text-align: right;
+    margin-right: 20px; 
+}
+
+header nav a{
+    display: inline;
+    margin-right: 20px;
+    text-decoration:none;
+    color: #c77171;
+    font-weight: bold;
+}
+
+.secciones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 13px;
+    grid-row-gap: 0px;
+}
+
+.secciones img {
+    width: 350px; /* Ancho deseado para todas las imágenes */
+    height: 350px; /* Alto deseado para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el espacio sin distorsión */
+}
+
+.secciones img{
+    background-color: #e2c5c5c9;
+    border: 1px solid #c9a6a6;
+    margin: auto;
+    border-radius: 3px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center; /* Centra el contenido de cada imagen */
+}
+
+.jumbotron {
+    background-image: url('jumbotron-bg.jpg');
+    background-size: cover;
+    text-align: center;
+    color: #151d20;
+    padding: 100px 0;
+}
+
+.jumbotron h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.jumbotron p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(201, 54, 98);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.blog {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.producto {
+    margin-bottom: 20px;
+}
+
+.producto img {
+    max-width: 50%;
+}
+
+.producto h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.producto p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.producto a {
+    display: inline-block;
+    background-color: rgb(230, 120, 193);
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f081b8;
+    color: #424141;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+/*:::::Pie de Pagina*/
+.pie-pagina {
+    width: 100%;
+    background-color: #c9a6a6;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 150px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #8a5e5e;
+    margin-right: 10px;
+    background-color: #fff;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+
+.pie-pagina .grupo-2{
+    background-color: #e9bfde;
+    padding: 10px 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    logo img {
+        margin: 0; 
+        margin-bottom: 10px; 
+    }
+
+    header nav a {
+        text-align: center;
+        margin-top: 10px;
+        margin-right: 0; 
+    }
+
+    .secciones {
+        width: 100%;
+        margin: 0; 
+        margin-bottom: 5px;
+        padding: 10px 5px;
+    }
+
+    .jumbotron {
+        padding: 50px 0;
+    }
+
+    .jumbotron h1 {
+        font-size: 28px;
+    }
+
+    .jumbotron p {
+        font-size: 16px;
+    }
+
+    .blog {
+        padding: 10px;
+    }
+
+    .producto h3 {
+        font-size: 18px;
+    }
+
+    .producto p {
+        font-size: 14px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
